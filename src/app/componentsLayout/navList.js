@@ -1,7 +1,7 @@
 'use client';
 
 import React, { forwardRef } from 'react';
-import { Tabs, Tab, Divider } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
 import Link from 'next/link';
 
 const links = [
@@ -27,17 +27,18 @@ export default function NavList({ orientation }) {
       orientation={orientation}
     >
       {links.map((link, index) => (
-        <React.Fragment key={index}>
-          <LinkTab
-            key={index}
-            label={link.name}
-            href={link.href}
-            sx={{
-              color: 'white',
-              '&:hover': {
-                color: 'orange',
-                borderBottom: '1px solid orange',
-                textShadow: `0 0 7px white, 
+        <LinkTab
+          key={index}
+          label={link.name}
+          href={link.href}
+          sx={{
+            color: 'white',
+            borderBottom:
+              orientation === 'vertical' ? '1px solid white' : 'none',
+            '&:hover': {
+              color: 'orange',
+              borderBottom: '1px solid orange',
+              textShadow: `0 0 7px white, 
                         0 0 10px white, 
                         0 0 21px orange, 
                         0 0 42px orange, 
@@ -45,13 +46,9 @@ export default function NavList({ orientation }) {
                         0 0 92px orange, 
                         0 0 102px orange, 
                         0 0 151px orange`,
-              },
-            }}
-          />
-          {orientation === 'vertical' && index !== links.length && (
-            <Divider sx={{ backgroundColor: 'orange' }} />
-          )}
-        </React.Fragment>
+            },
+          }}
+        />
       ))}
     </Tabs>
   );

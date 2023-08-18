@@ -43,6 +43,8 @@ export default function CustomMenu() {
               route='/'
               image='https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-cactus-flower-png-image_7008872.png'
               description='The logo of a cactus with red flower on it'
+              width={75}
+              height={75}
             />
           </Box>
           <Typography
