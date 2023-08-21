@@ -1,9 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link';
+import RecentPosts from './componentsHome/recentPosts';
 
 export default function Home() {
   return (
     <main>
-      <h1>Home Page</h1>
+      <RecentPosts />
     </main>
   );
 }

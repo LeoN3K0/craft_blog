@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body style={{ margin: 0, padding: 0 }}>
         <NavBar />
-        <div style={{ margin: 100 }}>{children}</div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
