@@ -98,7 +98,10 @@ export default function RecentPosts() {
               alt='Your Image'
               width={700}
               height={350}
-              style={{ width: '100%' }}
+              style={{
+                width: '100%',
+                boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)',
+              }}
             />
           </Grid2>
           <Grid2

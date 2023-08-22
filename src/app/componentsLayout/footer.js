@@ -26,9 +26,7 @@ const footerStyles = {
   borderWidth: 1,
   justifyContent: 'center',
   alignItems: 'center',
-  position: 'fixed', // Set the footer to a fixed position
-  bottom: 0, // Stick it to the bottom
-  width: '100%', // Make it span the entire width
-  backgroundColor: 'white', // Set a background color if needed
-  padding: '10px', // Add some padding to the footer
+  width: '100%',
+  backgroundColor: 'white',
+  padding: '10px',
 };
