@@ -55,7 +55,9 @@ export default function RecentPosts() {
     <Paper
       elevation={0}
       style={{
-        margin: '100px 20px',
+        marginTop: '100px',
+        marginLeft: '20px',
+        marginRight: '20px',
         display: 'flex',
         justifyContent: 'center',
       }}

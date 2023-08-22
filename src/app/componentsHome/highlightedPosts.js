@@ -15,7 +15,7 @@ export default function HighlightedPosts() {
       <Grid2 container justifyContent='center' spacing={2}>
         <Grid2
           xs={12}
-          sm={6}
+          sm={4}
           sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -28,7 +28,7 @@ export default function HighlightedPosts() {
           <Card
             sx={{
               backgroundColor: 'whitesmoke',
-              width: '50%',
+              width: '60%',
               '&:hover': {
                 transform: 'scale(1.05) perspective(1000px) rotateY(20deg)',
                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.3)',
@@ -66,7 +66,7 @@ export default function HighlightedPosts() {
         </Grid2>
         <Grid2
           xs={12}
-          sm={6}
+          sm={4}
           sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -74,14 +74,14 @@ export default function HighlightedPosts() {
           }}
         >
           <Typography variant='h6' paddingBottom={2}>
-            Communitys Top Rated Post
+            Communitys Top Rated Craft Post
           </Typography>
           <Card
             sx={{
               backgroundColor: 'whitesmoke',
-              width: '50%',
+              width: '60%',
               '&:hover': {
-                transform: 'scale(1.05) perspective(1000px) rotateY(-20deg)',
+                transform: 'scale(1.05)',
                 boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.3)',
               },
             }}
@@ -111,6 +111,57 @@ export default function HighlightedPosts() {
                 sx={{ marginLeft: 3 }}
               >
                 Content 2...
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid2>
+        <Grid2
+          xs={12}
+          sm={4}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <Typography variant='h6' paddingBottom={2}>
+            Communitys Top Rated History Post
+          </Typography>
+          <Card
+            sx={{
+              backgroundColor: 'whitesmoke',
+              width: '60%',
+              '&:hover': {
+                transform: 'scale(1.05) perspective(1000px) rotateY(-20deg)',
+                boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.3)',
+              },
+            }}
+          >
+            <Typography
+              variant='body2'
+              color='text.secondary'
+              sx={{ p: 2, marginLeft: 3 }}
+            >
+              Post Title
+            </Typography>
+            <CardMedia
+              component='img'
+              height='140'
+              image='/landscape5.jpg'
+              alt="Community's Top Rated Post Image"
+              sx={{
+                margin: '0 auto',
+                width: '80%',
+                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+              }}
+            />
+            <CardContent>
+              <Typography
+                variant='body2'
+                color='text.secondary'
+                sx={{ marginLeft: 3 }}
+              >
+                Content 3...
               </Typography>
             </CardContent>
           </Card>
