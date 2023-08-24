@@ -1,3 +1,5 @@
+'use client';
+
 import { Paper, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 
@@ -23,7 +25,7 @@ export default function HighlightedPosts() {
           }}
         >
           <Typography variant='h6' paddingBottom={2}>
-            Blog Owners Suggested Post
+            Suggested Post
           </Typography>
           <Card
             sx={{
@@ -35,33 +37,19 @@ export default function HighlightedPosts() {
               },
             }}
           >
-            <Typography
-              variant='body2'
-              color='text.secondary'
-              sx={{ p: 2, marginLeft: 3 }}
-            >
-              Post Title
-            </Typography>
             <CardMedia
               component='img'
-              height='140'
+              height='180'
               image='/landscape3.jpg'
               alt="Blog Owner's Suggested Post Image"
               sx={{
-                margin: '0 auto',
-                width: '80%',
-                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+                borderBottom: '2px solid #862e8b',
+                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
               }}
             />
-            <CardContent>
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                sx={{ marginLeft: 3 }}
-              >
-                Content 1...
-              </Typography>
-            </CardContent>
+            <Typography variant='body2' color='text.secondary' sx={{ p: 2 }}>
+              Post Title
+            </Typography>
           </Card>
         </Grid2>
         <Grid2
@@ -86,33 +74,19 @@ export default function HighlightedPosts() {
               },
             }}
           >
-            <Typography
-              variant='body2'
-              color='text.secondary'
-              sx={{ p: 2, marginLeft: 3 }}
-            >
-              Post Title
-            </Typography>
             <CardMedia
               component='img'
-              height='140'
+              height='180'
               image='/landscape1.jpg'
               alt="Community's Top Rated Post Image"
               sx={{
-                margin: '0 auto',
-                width: '80%',
-                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+                borderBottom: '2px solid #862e8b',
+                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
               }}
             />
-            <CardContent>
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                sx={{ marginLeft: 3 }}
-              >
-                Content 2...
-              </Typography>
-            </CardContent>
+            <Typography variant='body2' color='text.secondary' sx={{ p: 2 }}>
+              Post Title
+            </Typography>
           </Card>
         </Grid2>
         <Grid2
@@ -137,33 +111,19 @@ export default function HighlightedPosts() {
               },
             }}
           >
-            <Typography
-              variant='body2'
-              color='text.secondary'
-              sx={{ p: 2, marginLeft: 3 }}
-            >
-              Post Title
-            </Typography>
             <CardMedia
               component='img'
-              height='140'
+              height='180'
               image='/landscape5.jpg'
               alt="Community's Top Rated Post Image"
               sx={{
-                margin: '0 auto',
-                width: '80%',
-                boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+                borderBottom: '2px solid #862e8b',
+                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
               }}
             />
-            <CardContent>
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                sx={{ marginLeft: 3 }}
-              >
-                Content 3...
-              </Typography>
-            </CardContent>
+            <Typography variant='body2' color='text.secondary' sx={{ p: 2 }}>
+              Post Title
+            </Typography>
           </Card>
         </Grid2>
       </Grid2>
