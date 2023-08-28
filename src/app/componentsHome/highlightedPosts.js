@@ -1,6 +1,6 @@
 'use client';
 
-import { Paper, Typography, Card, CardContent, CardMedia } from '@mui/material';
+import { Paper, Typography, Card, CardMedia } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 
 export default function HighlightedPosts() {
@@ -12,6 +12,7 @@ export default function HighlightedPosts() {
         backgroundColor: 'rgba(32, 178, 170, 0.2)',
         margin: '50px 0px',
         padding: '20px 0px',
+        width: '100%',
       }}
     >
       <Grid2 container justifyContent='center' spacing={2}>

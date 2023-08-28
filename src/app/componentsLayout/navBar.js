@@ -10,10 +10,7 @@ import { CoolText } from '../globalStyles';
 
 export default function NavBar() {
   return (
-    <AppBar
-      position='fixed'
-      sx={{ flexGrow: 1, backgroundColor: 'darkseagreen' }}
-    >
+    <AppBar position='fixed' sx={{ backgroundColor: 'darkseagreen' }}>
       <Grid2 container spacing={1}>
         <Grid2
           xs={1}

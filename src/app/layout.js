@@ -1,5 +1,6 @@
 import Footer from './componentsLayout/footer';
 import NavBar from './componentsLayout/navBar';
+import { HolidayStateProvider } from './utils/holidayStateContext';
 
 export const metadata = {
   title: 'Craft Blog',
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
           minHeight: '100vh',
         }}
       >
-        <NavBar />
-        <div>{children}</div>
-        <Footer />
+        <HolidayStateProvider>
+          <NavBar />
+          <div>{children}</div>
+          <Footer />
+        </HolidayStateProvider>
       </body>
     </html>
   );

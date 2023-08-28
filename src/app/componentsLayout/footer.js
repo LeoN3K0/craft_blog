@@ -28,5 +28,4 @@ const footerStyles = {
   alignItems: 'center',
   width: '100%',
   backgroundColor: 'white',
-  padding: '10px',
 };
