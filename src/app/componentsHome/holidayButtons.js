@@ -40,6 +40,7 @@ export default function HolidayButtons({ season, seasonColor }) {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
         },
       },
     ],
@@ -54,23 +55,24 @@ export default function HolidayButtons({ season, seasonColor }) {
   }, [currentHolidayIndex]);
 
   return (
-    <Box sx={{ width: '75%', marginY: 5 }}>
+    <Box sx={{ width: '75%', marginY: { xs: 10, md: 5 } }}>
       <Slider {...sliderSettings}>
         {filteredHolidays.map((holiday, index) => (
           <Box
             key={index}
             sx={{
-              marginX: { xs: '25%', sm: '10%', md: '25%' },
+              marginX: { xs: '10%', sm: '10%', md: '25%' },
             }}
           >
             <Button
               variant='contained'
               sx={{
-                width: '50%',
+                width: { xs: '75%', md: '50%' },
                 marginTop: 0.05,
                 transform: `scale(${index === currentHolidayIndex ? 1 : 0.8})`,
                 transition: 'transform 0.3s',
                 backgroundColor: seasonColor,
+                borderRadius: 30,
                 '&:hover': {
                   backgroundColor: seasonColor,
                   opacity: 0.5,
@@ -87,6 +89,7 @@ export default function HolidayButtons({ season, seasonColor }) {
                   backgroundColor: 'rgba(0, 0, 0, 0.2)',
                   opacity: index === currentHolidayIndex ? 0 : 1,
                   pointerEvents: 'none',
+                  borderRadius: 30,
                 }}
               />
               {holiday.name}

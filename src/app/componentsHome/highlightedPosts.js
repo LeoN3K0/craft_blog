@@ -13,6 +13,7 @@ export default function HighlightedPosts() {
         margin: '50px 0px',
         padding: '20px 0px',
         width: '100%',
+        overflowX: 'hidden',
       }}
     >
       <Grid2 container justifyContent='center' spacing={2}>

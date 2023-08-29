@@ -26,6 +26,6 @@ const footerStyles = {
   borderWidth: 1,
   justifyContent: 'center',
   alignItems: 'center',
-  width: '100%',
+  width: 'calc(100% - 2px)',
   backgroundColor: 'white',
 };
